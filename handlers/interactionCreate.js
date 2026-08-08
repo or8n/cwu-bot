@@ -397,7 +397,7 @@ await interaction.deferUpdate();
         await channel.setTopic(buildTopic(record));
         await channel.permissionOverwrites.edit(record.ownerId, { SendMessages: false });
       await interaction.message.edit({
- await interaction.message.edit({
+
   embeds: [ticketEmbed({ client, customer, ...record })],
   components: [ticketButtons({ claimed: true, done: true })],
 });
